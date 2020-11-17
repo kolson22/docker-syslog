@@ -1,0 +1,16 @@
+{
+  "name": "syslog",
+  "version": "1.0.0",
+  "description": "a nodejs project to send syslog alerts based on keywords",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "limiter": "^1.1.5",
+    "syslog-server": "^1.0.1"
+  }
+}
