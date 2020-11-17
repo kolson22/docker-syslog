@@ -7,4 +7,6 @@ COPY . .
 
 RUN npm install
 
+EXPOSE 514/udp
+
 CMD [ "node", "index.js" ]
