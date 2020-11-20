@@ -6,7 +6,10 @@ const alerts = [
   'hello'
 ]
 
+const regex = /^<[0-9]+>/g;
+
 server.on("message", (message) => {
+  message.message = message.message.replace(regex, '');
   console.log(message);
   message.message.split(' ').forEach((word) => {
     if(alerts.indexOf(word) !== -1){
